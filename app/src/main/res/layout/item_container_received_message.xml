@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:padding="4dp">
+
+    <TextView
+        android:id="@+id/textNickSender"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:textSize="11sp"
+        android:textColor="#ffffff"
+        app:layout_constraintBottom_toTopOf="@id/textMessage"
+        app:layout_constraintStart_toStartOf="@id/textMessage">
+    </TextView>
+
+    <TextView
+        android:id="@+id/textMessage"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="4dp"
+        android:background="@drawable/background_received_message"
+        android:padding="12dp"
+        android:textColor="@color/white"
+        android:textSize="16sp"
+        app:layout_constraintTop_toBottomOf="@id/textNickSender"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintWidth_percent="0.75">
+    </TextView>
+
+    <TextView
+        android:id="@+id/textDateTimeSender"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:textSize="11sp"
+        android:textColor="#ccffffff"
+        app:layout_constraintTop_toBottomOf="@id/textMessage"
+        app:layout_constraintStart_toStartOf="@id/textMessage">
+    </TextView>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
